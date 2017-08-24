@@ -5,12 +5,13 @@ print "I'm thinking of a number between 1 and 10."
 
 player_num = 0
 while player_num != secret:
-    print "secret %s" % (secret)
+    #print "secret %s" % (secret)
     print "Number of guesses left %d" % (guesses)
     player_num = raw_input("What's the number? ")
 
     if guesses == 1:
         print "No more guesses."
+        print "The number is %d!" % (secret)
         break
 
 
